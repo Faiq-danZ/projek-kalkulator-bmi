@@ -1,0 +1,4 @@
+com\mycompany\projek\kalkulator\bmi\App.class
+com\mycompany\projek\kalkulator\bmi\PrimaryController.class
+module-info.class
+com\mycompany\projek\kalkulator\bmi\model\BMIModel.class
