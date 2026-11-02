@@ -21,30 +21,15 @@ Aplikasi desktop interaktif untuk menghitung Indeks Massa Tubuh (Body Mass Index
 
 ---
 
-## Teknologi & Tools
+## Cara Menjalankan Proyek
 
-- **Bahasa Pemrograman:** Java (JDK 21)
-- **GUI Framework:** JavaFX 21
-- **Layout Manager:** FXML & Scene Builder
-- **Build Tool:** Apache Maven
-- **IDE:** Apache NetBeans
+### 1. Menggunakan Apache NetBeans (Cara Termudah)
+1. Buka proyek `projek-kalkulator-bmi` di Apache NetBeans.
+2. Klik tombol **Run** (atau tekan tombol **F6** di keyboard).
+3. Jika sebelumnya ada perbaikan kode/FXML, tekan **Clean and Build** (`Shift + F11`) terlebih dahulu, lalu klik **Run** (`F6`).
 
----
-
-## Struktur Proyek (MVC Architecture)
-
-```text
-projek-kalkulator-bmi/
-├── src/
-│   └── main/
-│       ├── java/
-│       │   ├── com/mycompany/projek/kalkulator/bmi/
-│       │   │   ├── App.java                   # Main Application Class
-│       │   │   └── PrimaryController.java     # Controller (Logika UI)
-│       │   ├── com/mycompany/projek/kalkulator/bmi/model/
-│       │   │   └── BMIModel.java              # Model (Logika Bisnis/Hitungan)
-│       │   └── module-info.java               # Konfigurasi Modul JavaFX
-│       └── resources/
-│           └── com/mycompany/projek/kalkulator/bmi/
-│               └── primary.fxml               # View (Desain Tampilan FXML)
-└── pom.xml                                    # Konfigurasi Maven Dependency
+### 2. Menggunakan Terminal / Command Prompt
+```bash
+git clone [https://github.com/Faiq-danZ/projek-kalkulator-bmi.git](https://github.com/Faiq-danZ/projek-kalkulator-bmi.git)
+cd projek-kalkulator-bmi
+mvn clean javafx:run
